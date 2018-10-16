@@ -46,6 +46,14 @@ namespace IntelligentKioskSample.Views
             this.InitializeComponent();
 
             this.DataContext = KioskExperiences.Experiences;
+
+            //System.Diagnostics.Debug.WriteLine(KioskExperiences.Experiences);
+
+            //KioskExperience myItem = KioskExperiences.Experiences.Where(e => e.Attributes.Title == "Realtime Crowd Insights").FirstOrDefault();
+            //var me = 1;
+            //this.Frame.Navigate(myItem.PageType);
+
+            //this.Frame.Loaded += ;
         }
 
         private void OnDemoClick(object sender, ItemClickEventArgs e)

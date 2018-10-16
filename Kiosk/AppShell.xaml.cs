@@ -132,7 +132,7 @@ namespace IntelligentKioskSample
             NavMenuItem navMenuItem = null;
             Type destPage = null;
 
-            navMenuItem = navlist.First();
+            navMenuItem = navlist[1];
             destPage = navMenuItem.DestPage;
 
             if (navMenuItem != null)
@@ -140,7 +140,8 @@ namespace IntelligentKioskSample
                 NavMenuList.SelectedItem = navMenuItem;
             }
 
-            NavigateToPage(destPage);
+            //NavigateToPage(destPage);
+            NavigateToPage(typeof(RealTimeDemo));
         }
 
         public void NavigateToPage(Type destPage)
